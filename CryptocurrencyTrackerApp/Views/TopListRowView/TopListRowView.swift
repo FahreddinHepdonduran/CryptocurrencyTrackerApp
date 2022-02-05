@@ -9,8 +9,30 @@ import SwiftUI
 
 struct TopListRowView: View {
     var body: some View {
-        VStack {
+        ZStack {
+            Color("TopListRowBackgroundColor")
             
+            VStack {
+                Spacer(minLength: 24.0)
+                
+                Image(systemName: "person.crop.circle")
+                    .resizable()
+                    .frame(width: 66.0, height: 66.0)
+                
+                Spacer(minLength: 14.0)
+                
+                Text("BITCOIN")
+                    .font(.custom("Roboto", size: 16.0))
+                    .foregroundColor(.white)
+                
+                Spacer(minLength: 23.0)
+                
+                Text("$42")
+                    .font(.custom("Roboto", size: 16.0))
+                    .foregroundColor(.white)
+                
+                Spacer(minLength: 45.0)
+            }
         }
     }
 }
