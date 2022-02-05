@@ -36,7 +36,6 @@
 			isa = PBXGroup;
 			children = (
 				E5B9767D27AECC5B00EEA4FB /* MainView */,
-				E5E990BE27AD587500691DE9 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -44,6 +43,7 @@
 		E5B9767D27AECC5B00EEA4FB /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				E5E990BE27AD587500691DE9 /* ContentView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
