@@ -32,7 +32,7 @@ struct TopListRowView: View {
                     .foregroundColor(.white)
                 
                 Spacer(minLength: 45.0)
-            }
+            }.frame(width: 315.0, height: 210.0)
         }
     }
 }
