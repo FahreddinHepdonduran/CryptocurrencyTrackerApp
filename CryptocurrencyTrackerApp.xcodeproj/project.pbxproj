@@ -35,9 +35,17 @@
 		E5B9767C27AECBEE00EEA4FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E5B9767D27AECC5B00EEA4FB /* MainView */,
 				E5E990BE27AD587500691DE9 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E5B9767D27AECC5B00EEA4FB /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		E5E990B027AD587500691DE9 = {
