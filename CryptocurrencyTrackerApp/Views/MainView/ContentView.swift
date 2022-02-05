@@ -13,8 +13,8 @@ struct ContentView: View {
             LinearGradient(
                 colors:
                     [
-                        Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)),
-                        Color(#colorLiteral(red: 0.4588235294, green: 0.2745098039, blue: 0.5058823529, alpha: 1))
+                        Color("GradientBackgroundColor1"),
+                        Color("GradientBackgroundColor2")
                     ],
                 startPoint: .top,
                 endPoint: .bottom
