@@ -35,6 +35,7 @@
 		E5B9767C27AECBEE00EEA4FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E5B9767E27AECCE400EEA4FB /* TopListRowView */,
 				E5B9767D27AECC5B00EEA4FB /* MainView */,
 			);
 			path = Views;
@@ -46,6 +47,13 @@
 				E5E990BE27AD587500691DE9 /* ContentView.swift */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		E5B9767E27AECCE400EEA4FB /* TopListRowView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TopListRowView;
 			sourceTree = "<group>";
 		};
 		E5E990B027AD587500691DE9 = {
