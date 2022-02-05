@@ -35,6 +35,7 @@
 		E5B9767C27AECBEE00EEA4FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E5E990BE27AD587500691DE9 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -59,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				E5E990C027AD587700691DE9 /* Assets.xcassets */,
-				E5E990BE27AD587500691DE9 /* ContentView.swift */,
 				E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */,
 				E5E990C227AD587700691DE9 /* Preview Content */,
 				E5B9767C27AECBEE00EEA4FB /* Views */,
