@@ -32,6 +32,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5B9767C27AECBEE00EEA4FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E5E990B027AD587500691DE9 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +58,11 @@
 		E5E990BB27AD587500691DE9 /* CryptocurrencyTrackerApp */ = {
 			isa = PBXGroup;
 			children = (
-				E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */,
-				E5E990BE27AD587500691DE9 /* ContentView.swift */,
 				E5E990C027AD587700691DE9 /* Assets.xcassets */,
+				E5E990BE27AD587500691DE9 /* ContentView.swift */,
+				E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */,
 				E5E990C227AD587700691DE9 /* Preview Content */,
+				E5B9767C27AECBEE00EEA4FB /* Views */,
 			);
 			path = CryptocurrencyTrackerApp;
 			sourceTree = "<group>";
