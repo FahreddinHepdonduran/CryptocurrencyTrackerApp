@@ -20,15 +20,28 @@ struct ContentView: View {
                 endPoint: .bottom
             ).edgesIgnoringSafeArea(.all)
             
-            ScrollView(.horizontal) {
-                HStack(spacing: 14.0) {
+            VStack {
+                ScrollView(.horizontal) {
+                    HStack(spacing: 14.0) {
+                        ForEach(0..<10) { _ in
+                            TopListRowView()
+                                .cornerRadius(21.0)
+                            
+                        }
+                    }
+                }.frame(height: 210.0)
+                
+                List {
                     ForEach(0..<10) { _ in
-                        TopListRowView()
+                        BottomListRowView()
                             .cornerRadius(21.0)
                         
-                    }
+                    }.listRowBackground(Color.clear)
+                }.onAppear {
+                    UITableView.appearance().separatorColor = .clear
+                    UITableView.appearance().backgroundColor = .clear
                 }
-            }.frame(height: 210.0)
+            }
         }
     }
 }
