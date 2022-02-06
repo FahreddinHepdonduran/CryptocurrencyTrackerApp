@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E504703327AFEA5C0058A560 /* BottomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504703227AFEA5C0058A560 /* BottomListRowView.swift */; };
 		E5B9768027AECD5F00EEA4FB /* TopListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9767F27AECD5F00EEA4FB /* TopListRowView.swift */; };
 		E5E990BD27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */; };
 		E5E990BF27AD587500691DE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E990BE27AD587500691DE9 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E504703227AFEA5C0058A560 /* BottomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomListRowView.swift; sourceTree = "<group>"; };
 		E5B9767F27AECD5F00EEA4FB /* TopListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListRowView.swift; sourceTree = "<group>"; };
 		E5E990B927AD587500691DE9 /* CryptocurrencyTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptocurrencyTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptocurrencyTrackerAppApp.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 		E504703127AFEA0A0058A560 /* BottomListRowView */ = {
 			isa = PBXGroup;
 			children = (
+				E504703227AFEA5C0058A560 /* BottomListRowView.swift */,
 			);
 			path = BottomListRowView;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				E5E990BF27AD587500691DE9 /* ContentView.swift in Sources */,
 				E5B9768027AECD5F00EEA4FB /* TopListRowView.swift in Sources */,
+				E504703327AFEA5C0058A560 /* BottomListRowView.swift in Sources */,
 				E5E990BD27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
