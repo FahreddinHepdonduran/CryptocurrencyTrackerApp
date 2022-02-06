@@ -16,5 +16,8 @@ struct BottomListRowView: View {
 struct BottomListRowView_Previews: PreviewProvider {
     static var previews: some View {
         BottomListRowView()
+            .previewLayout(
+                .fixed(width: 317.0, height: 77.0)
+            )
     }
 }
