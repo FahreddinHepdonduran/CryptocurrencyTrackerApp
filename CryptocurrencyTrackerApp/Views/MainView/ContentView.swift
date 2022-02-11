@@ -26,9 +26,14 @@ struct ContentView: View {
                 ScrollView(.horizontal) {
                     HStack(spacing: 14.0) {
                         ForEach(0..<10) { _ in
-                            TopListRowView()
-                                .cornerRadius(21.0)
-                            
+                            TopListRowView(
+                                model: CoinAssetModel(
+                                    assetId: "",
+                                    name: "Bitcoin",
+                                    typeIsCrypto: true,
+                                    priceUSD: 4.0
+                                )
+                            ).cornerRadius(21.0)
                         }
                     }
                 }.frame(height: 210.0)
