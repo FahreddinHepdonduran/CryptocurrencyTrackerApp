@@ -44,6 +44,13 @@
 			path = BottomListRowView;
 			sourceTree = "<group>";
 		};
+		E5A9E1AA27B6ADB8000872B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E5B9767C27AECBEE00EEA4FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +98,7 @@
 			children = (
 				E5E990C027AD587700691DE9 /* Assets.xcassets */,
 				E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */,
+				E5A9E1AA27B6ADB8000872B6 /* Models */,
 				E5E990C227AD587700691DE9 /* Preview Content */,
 				E5B9767C27AECBEE00EEA4FB /* Views */,
 			);
