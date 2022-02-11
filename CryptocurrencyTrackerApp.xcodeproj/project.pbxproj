@@ -48,8 +48,8 @@
 			isa = PBXGroup;
 			children = (
 				E504703127AFEA0A0058A560 /* BottomListRowView */,
-				E5B9767E27AECCE400EEA4FB /* TopListRowView */,
 				E5B9767D27AECC5B00EEA4FB /* MainView */,
+				E5B9767E27AECCE400EEA4FB /* TopListRowView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
