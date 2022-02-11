@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TopListRowView: View {
+    let model: CoinAssetModel
+    
     var body: some View {
         ZStack {
             Color("TopListRowBackgroundColor")
@@ -21,13 +23,13 @@ struct TopListRowView: View {
                 
                 Spacer(minLength: 14.0)
                 
-                Text("BITCOIN")
+                Text(model.name)
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                 
                 Spacer(minLength: 23.0)
                 
-                Text("$42")
+                Text(String(model.priceUSD))
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                 
@@ -39,7 +41,14 @@ struct TopListRowView: View {
 
 struct TopListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        TopListRowView()
+        TopListRowView(
+            model: CoinAssetModel(
+                assetId: "",
+                name: "Bitcoin",
+                typeIsCrypto: true,
+                priceUSD: 4.0
+            )
+        )
             .previewLayout(
                 .fixed(width: 315.0, height: 210.0)
             )
