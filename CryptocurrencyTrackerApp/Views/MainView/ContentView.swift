@@ -21,6 +21,8 @@ struct ContentView: View {
             ).edgesIgnoringSafeArea(.all)
             
             VStack {
+                Spacer(minLength: 71.0)
+                
                 ScrollView(.horizontal) {
                     HStack(spacing: 14.0) {
                         ForEach(0..<10) { _ in
@@ -30,6 +32,8 @@ struct ContentView: View {
                         }
                     }
                 }.frame(height: 210.0)
+                
+                Spacer(minLength: 65.0)
                 
                 List {
                     ForEach(0..<10) { _ in
