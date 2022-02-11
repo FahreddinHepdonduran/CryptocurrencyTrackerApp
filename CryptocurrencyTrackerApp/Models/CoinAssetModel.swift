@@ -7,3 +7,9 @@
 
 import Foundation
 
+struct CoinAssetModel {
+    let assetId: String
+    let name: String
+    let typeIsCrypto: Bool
+    let priceUSD: Double
+}
