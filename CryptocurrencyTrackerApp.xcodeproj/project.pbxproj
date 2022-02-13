@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E504703327AFEA5C0058A560 /* BottomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504703227AFEA5C0058A560 /* BottomListRowView.swift */; };
+		E52A446D27B9570000F9F56D /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = E52A446C27B9570000F9F56D /* ViewInspector */; };
 		E5A9E1AE27B6AE33000872B6 /* CoinAssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9E1AD27B6AE33000872B6 /* CoinAssetModel.swift */; };
 		E5B9768027AECD5F00EEA4FB /* TopListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9767F27AECD5F00EEA4FB /* TopListRowView.swift */; };
 		E5E990BD27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */; };
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52A446D27B9570000F9F56D /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +135,7 @@
 			);
 			name = CryptocurrencyTrackerApp;
 			packageProductDependencies = (
+				E52A446C27B9570000F9F56D /* ViewInspector */,
 			);
 			productName = CryptocurrencyTrackerApp;
 			productReference = E5E990B927AD587500691DE9 /* CryptocurrencyTrackerApp.app */;
@@ -163,6 +166,7 @@
 			);
 			mainGroup = E5E990B027AD587500691DE9;
 			packageReferences = (
+				E52A446B27B9570000F9F56D /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = E5E990BA27AD587500691DE9 /* Products */;
 			projectDirPath = "";
@@ -327,6 +331,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CryptocurrencyTrackerApp/Preview Content\"";
 				DEVELOPMENT_TEAM = FKZ5H3494C;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -357,6 +362,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CryptocurrencyTrackerApp/Preview Content\"";
 				DEVELOPMENT_TEAM = FKZ5H3494C;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -399,6 +405,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E52A446B27B9570000F9F56D /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E52A446C27B9570000F9F56D /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E52A446B27B9570000F9F56D /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5E990B127AD587500691DE9 /* Project object */;
 }
