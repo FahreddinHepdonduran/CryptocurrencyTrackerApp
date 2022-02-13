@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct BottomListRowView: View {
+    let model: CoinAssetModel
+    
     var body: some View {
         ZStack {
             Color("BottomListRowBackgroundColor")
@@ -20,13 +22,13 @@ struct BottomListRowView: View {
                 
                 Spacer(minLength: 22.0)
                 
-                Text("BTC")
+                Text(model.assetId)
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                 
                 Spacer(minLength: 71.0)
                 
-                Text("$46464646")
+                Text(String(model.priceUSD))
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                     .padding(.trailing, 43.0)
@@ -37,9 +39,15 @@ struct BottomListRowView: View {
 
 struct BottomListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomListRowView()
-            .previewLayout(
-                .fixed(width: 317.0, height: 77.0)
+        BottomListRowView(
+            model: CoinAssetModel(
+                assetId: "BTC",
+                name: "Bitcoin",
+                typeIsCrypto: true,
+                priceUSD: 4.0
             )
+        ).previewLayout(
+            .fixed(width: 317.0, height: 77.0)
+        )
     }
 }
