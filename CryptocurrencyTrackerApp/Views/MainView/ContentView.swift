@@ -28,7 +28,7 @@ struct ContentView: View {
                         ForEach(0..<10) { _ in
                             TopListRowView(
                                 model: CoinAssetModel(
-                                    assetId: "",
+                                    assetId: "BTC",
                                     name: "Bitcoin",
                                     typeIsCrypto: true,
                                     priceUSD: 4.0
@@ -42,9 +42,14 @@ struct ContentView: View {
                 
                 List {
                     ForEach(0..<10) { _ in
-                        BottomListRowView()
-                            .cornerRadius(21.0)
-                        
+                        BottomListRowView(
+                            model: CoinAssetModel(
+                                assetId: "BTC",
+                                name: "Bitcoin",
+                                typeIsCrypto: true,
+                                priceUSD: 4.0
+                            )
+                        ).cornerRadius(21.0) 
                     }.listRowBackground(Color.clear)
                 }.onAppear {
                     UITableView.appearance().separatorColor = .clear
