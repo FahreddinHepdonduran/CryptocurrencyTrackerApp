@@ -13,6 +13,7 @@
 		E58E100127BC2C5B00B3FC91 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = E58E100027BC2C5B00B3FC91 /* FirebaseFirestoreSwift-Beta */; };
 		E58E100427BC308B00B3FC91 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100327BC308B00B3FC91 /* DatabaseProtocol.swift */; };
 		E58E100727BC337100B3FC91 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100627BC337100B3FC91 /* FirebaseManager.swift */; };
+		E58E100A27BC385B00B3FC91 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100927BC385B00B3FC91 /* CoinViewModel.swift */; };
 		E5A9E1AE27B6AE33000872B6 /* CoinAssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9E1AD27B6AE33000872B6 /* CoinAssetModel.swift */; };
 		E5B9768027AECD5F00EEA4FB /* TopListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9767F27AECD5F00EEA4FB /* TopListRowView.swift */; };
 		E5E990BD27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */; };
@@ -26,6 +27,7 @@
 		E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E58E100327BC308B00B3FC91 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		E58E100627BC337100B3FC91 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		E58E100927BC385B00B3FC91 /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
 		E5A9E1AD27B6AE33000872B6 /* CoinAssetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAssetModel.swift; sourceTree = "<group>"; };
 		E5B9767F27AECD5F00EEA4FB /* TopListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListRowView.swift; sourceTree = "<group>"; };
 		E5E990B927AD587500691DE9 /* CryptocurrencyTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptocurrencyTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,14 @@
 				E58E100627BC337100B3FC91 /* FirebaseManager.swift */,
 			);
 			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		E58E100827BC383900B3FC91 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E58E100927BC385B00B3FC91 /* CoinViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		E5A9E1AA27B6ADB8000872B6 /* Models */ = {
@@ -132,6 +142,7 @@
 				E5A9E1AA27B6ADB8000872B6 /* Models */,
 				E5E990C227AD587700691DE9 /* Preview Content */,
 				E58E100227BC300F00B3FC91 /* Protocols */,
+				E58E100827BC383900B3FC91 /* ViewModels */,
 				E5B9767C27AECBEE00EEA4FB /* Views */,
 			);
 			path = CryptocurrencyTrackerApp;
@@ -226,6 +237,7 @@
 				E5E990BF27AD587500691DE9 /* ContentView.swift in Sources */,
 				E5B9768027AECD5F00EEA4FB /* TopListRowView.swift in Sources */,
 				E58E100727BC337100B3FC91 /* FirebaseManager.swift in Sources */,
+				E58E100A27BC385B00B3FC91 /* CoinViewModel.swift in Sources */,
 				E58E100427BC308B00B3FC91 /* DatabaseProtocol.swift in Sources */,
 				E5A9E1AE27B6AE33000872B6 /* CoinAssetModel.swift in Sources */,
 				E504703327AFEA5C0058A560 /* BottomListRowView.swift in Sources */,
