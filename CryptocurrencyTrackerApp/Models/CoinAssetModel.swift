@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct CoinAssetModel: Codable, Identifiable {
+struct CoinAssetModel: Identifiable, Codable {
+    @DocumentID var id: String?
     let uuid: String
     let symbol: String
     let name: String
