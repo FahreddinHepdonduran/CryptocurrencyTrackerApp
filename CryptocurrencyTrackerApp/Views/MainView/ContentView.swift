@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = CoinViewModel()
+    
     var body: some View {
         ZStack {
             LinearGradient(
@@ -25,37 +29,19 @@ struct ContentView: View {
                 
                 ScrollView(.horizontal) {
                     HStack(spacing: 14.0) {
-                        ForEach(0..<10) { _ in
-                            TopListRowView(
-                                model: CoinAssetModel(
-                                    uuid: "BTC",
-                                    symbol: "",
-                                    name: "Bitcoin",
-                                    iconUrl: "",
-                                    price: ""
-                                )
-                            ).cornerRadius(21.0)
+                        ForEach(viewModel.coins) { coin in
+                            TopListRowView(model: coin)
+                                .cornerRadius(21.0)
                         }
                     }
                 }.frame(height: 210.0)
                 
                 Spacer(minLength: 65.0)
                 
-                List {
-                    ForEach(0..<10) { _ in
-                        BottomListRowView(
-                            model: CoinAssetModel(
-                                uuid: "BTC",
-                                symbol: "",
-                                name: "Bitcoin",
-                                iconUrl: "",
-                                price: ""
-                            )
-                        ).cornerRadius(21.0) 
-                    }.listRowBackground(Color.clear)
-                }.onAppear {
-                    UITableView.appearance().separatorColor = .clear
-                    UITableView.appearance().backgroundColor = .clear
+                List(viewModel.coins) { coins in
+                    BottomListRowView(model: coins)
+                        .cornerRadius(21.0)
+                        .listRowBackground(Color.clear)
                 }
             }
         }
