@@ -8,6 +8,6 @@
 import Foundation
 
 protocol DatabaseProtocol {
-    var dataPublisher: Published<String>.Publisher { get }
+    var dataPublisher: Published<[CoinAssetModel]>.Publisher { get }
     func getData()
 }
