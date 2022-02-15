@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 class CoinViewModel: ObservableObject {
     
@@ -17,13 +18,18 @@ class CoinViewModel: ObservableObject {
     
     init(database: DatabaseProtocol = FirebaseManager()) {
         self.database = database
-        getCoinData()
+        subscribeToCoins()
+        getData()
     }
     
-    func getCoinData() {
-        database.dataPublisher.map({$0})
+    func subscribeToCoins() {
+        database.dataPublisher.map({print($0); return $0})
             .assign(to: \.coins, on: self)
             .store(in: &cancellables)
+    }
+    
+    func getData() {
+        database.getData()
     }
     
 }
