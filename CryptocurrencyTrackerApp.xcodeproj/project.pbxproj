@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E504703327AFEA5C0058A560 /* BottomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504703227AFEA5C0058A560 /* BottomListRowView.swift */; };
+		E58E0FFC27BC211700B3FC91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */; };
 		E5A9E1AE27B6AE33000872B6 /* CoinAssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9E1AD27B6AE33000872B6 /* CoinAssetModel.swift */; };
 		E5B9768027AECD5F00EEA4FB /* TopListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9767F27AECD5F00EEA4FB /* TopListRowView.swift */; };
 		E5E990BD27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		E504703227AFEA5C0058A560 /* BottomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomListRowView.swift; sourceTree = "<group>"; };
+		E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E5A9E1AD27B6AE33000872B6 /* CoinAssetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAssetModel.swift; sourceTree = "<group>"; };
 		E5B9767F27AECD5F00EEA4FB /* TopListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListRowView.swift; sourceTree = "<group>"; };
 		E5E990B927AD587500691DE9 /* CryptocurrencyTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptocurrencyTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 			children = (
 				E5E990C027AD587700691DE9 /* Assets.xcassets */,
 				E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */,
+				E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */,
 				E5A9E1AA27B6ADB8000872B6 /* Models */,
 				E5E990C227AD587700691DE9 /* Preview Content */,
 				E5B9767C27AECBEE00EEA4FB /* Views */,
@@ -180,6 +183,7 @@
 			files = (
 				E5E990C427AD587700691DE9 /* Preview Assets.xcassets in Resources */,
 				E5E990C127AD587700691DE9 /* Assets.xcassets in Resources */,
+				E58E0FFC27BC211700B3FC91 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
