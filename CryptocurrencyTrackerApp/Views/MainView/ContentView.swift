@@ -28,10 +28,11 @@ struct ContentView: View {
                         ForEach(0..<10) { _ in
                             TopListRowView(
                                 model: CoinAssetModel(
-                                    assetId: "BTC",
+                                    uuid: "BTC",
+                                    symbol: "",
                                     name: "Bitcoin",
-                                    typeIsCrypto: true,
-                                    priceUSD: 4.0
+                                    iconUrl: "",
+                                    price: ""
                                 )
                             ).cornerRadius(21.0)
                         }
@@ -44,10 +45,11 @@ struct ContentView: View {
                     ForEach(0..<10) { _ in
                         BottomListRowView(
                             model: CoinAssetModel(
-                                assetId: "BTC",
+                                uuid: "BTC",
+                                symbol: "",
                                 name: "Bitcoin",
-                                typeIsCrypto: true,
-                                priceUSD: 4.0
+                                iconUrl: "",
+                                price: ""
                             )
                         ).cornerRadius(21.0) 
                     }.listRowBackground(Color.clear)

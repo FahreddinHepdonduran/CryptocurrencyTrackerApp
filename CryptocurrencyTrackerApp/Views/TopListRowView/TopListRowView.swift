@@ -29,7 +29,7 @@ struct TopListRowView: View {
                 
                 Spacer(minLength: 23.0)
                 
-                Text(String(model.priceUSD))
+                Text(String(model.price))
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                 
@@ -43,10 +43,11 @@ struct TopListRowView_Previews: PreviewProvider {
     static var previews: some View {
         TopListRowView(
             model: CoinAssetModel(
-                assetId: "",
+                uuid: "BTC",
+                symbol: "",
                 name: "Bitcoin",
-                typeIsCrypto: true,
-                priceUSD: 4.0
+                iconUrl: "",
+                price: ""
             )
         )
             .previewLayout(

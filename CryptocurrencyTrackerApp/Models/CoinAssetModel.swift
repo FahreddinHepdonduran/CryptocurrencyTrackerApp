@@ -8,8 +8,9 @@
 import Foundation
 
 struct CoinAssetModel {
-    let assetId: String
+    let uuid: String
+    let symbol: String
     let name: String
-    let typeIsCrypto: Bool
-    let priceUSD: Double
+    let iconUrl: String
+    let price: String
 }

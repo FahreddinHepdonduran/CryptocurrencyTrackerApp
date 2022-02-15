@@ -22,13 +22,13 @@ struct BottomListRowView: View {
                 
                 Spacer(minLength: 22.0)
                 
-                Text(model.assetId)
+                Text(model.uuid)
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                 
                 Spacer(minLength: 71.0)
                 
-                Text(String(model.priceUSD))
+                Text(String(model.price))
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                     .padding(.trailing, 43.0)
@@ -41,10 +41,11 @@ struct BottomListRowView_Previews: PreviewProvider {
     static var previews: some View {
         BottomListRowView(
             model: CoinAssetModel(
-                assetId: "BTC",
+                uuid: "BTC",
+                symbol: "",
                 name: "Bitcoin",
-                typeIsCrypto: true,
-                priceUSD: 4.0
+                iconUrl: "",
+                price: ""
             )
         ).previewLayout(
             .fixed(width: 317.0, height: 77.0)
