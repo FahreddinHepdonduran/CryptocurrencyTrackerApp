@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E504703327AFEA5C0058A560 /* BottomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504703227AFEA5C0058A560 /* BottomListRowView.swift */; };
 		E58E0FFC27BC211700B3FC91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */; };
+		E58E0FFF27BC2C5B00B3FC91 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E58E0FFE27BC2C5B00B3FC91 /* FirebaseFirestore */; };
+		E58E100127BC2C5B00B3FC91 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = E58E100027BC2C5B00B3FC91 /* FirebaseFirestoreSwift-Beta */; };
 		E5A9E1AE27B6AE33000872B6 /* CoinAssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9E1AD27B6AE33000872B6 /* CoinAssetModel.swift */; };
 		E5B9768027AECD5F00EEA4FB /* TopListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9767F27AECD5F00EEA4FB /* TopListRowView.swift */; };
 		E5E990BD27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */; };
@@ -34,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58E0FFF27BC2C5B00B3FC91 /* FirebaseFirestore in Frameworks */,
+				E58E100127BC2C5B00B3FC91 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +140,8 @@
 			);
 			name = CryptocurrencyTrackerApp;
 			packageProductDependencies = (
+				E58E0FFE27BC2C5B00B3FC91 /* FirebaseFirestore */,
+				E58E100027BC2C5B00B3FC91 /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = CryptocurrencyTrackerApp;
 			productReference = E5E990B927AD587500691DE9 /* CryptocurrencyTrackerApp.app */;
@@ -166,6 +172,7 @@
 			);
 			mainGroup = E5E990B027AD587500691DE9;
 			packageReferences = (
+				E58E0FFD27BC2C5B00B3FC91 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = E5E990BA27AD587500691DE9 /* Products */;
 			projectDirPath = "";
@@ -405,6 +412,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E58E0FFD27BC2C5B00B3FC91 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E58E0FFE27BC2C5B00B3FC91 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E58E0FFD27BC2C5B00B3FC91 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E58E100027BC2C5B00B3FC91 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E58E0FFD27BC2C5B00B3FC91 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5E990B127AD587500691DE9 /* Project object */;
 }
