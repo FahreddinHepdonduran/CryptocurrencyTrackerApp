@@ -22,13 +22,13 @@ struct BottomListRowView: View {
                 
                 Spacer(minLength: 22.0)
                 
-                Text(model.uuid)
+                Text(model.symbol)
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                 
                 Spacer(minLength: 71.0)
                 
-                Text(String(model.price))
+                Text(model.price)
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                     .padding(.trailing, 43.0)
