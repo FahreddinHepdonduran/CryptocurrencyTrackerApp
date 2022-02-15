@@ -29,7 +29,7 @@ struct TopListRowView: View {
                 
                 Spacer(minLength: 23.0)
                 
-                Text(String(model.price))
+                Text(model.price)
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                 
