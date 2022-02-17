@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E5D4735927BE8BEA00C3DA0C"
+               BuildableName = "CryptocurrencyTrackerAppUnitTests.xctest"
+               BlueprintName = "CryptocurrencyTrackerAppUnitTests"
+               ReferencedContainer = "container:CryptocurrencyTrackerApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
