@@ -17,6 +17,7 @@
 		E5A9E1AE27B6AE33000872B6 /* CoinAssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9E1AD27B6AE33000872B6 /* CoinAssetModel.swift */; };
 		E5B9768027AECD5F00EEA4FB /* TopListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9767F27AECD5F00EEA4FB /* TopListRowView.swift */; };
 		E5D4735D27BE8BEA00C3DA0C /* CoinViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4735C27BE8BEA00C3DA0C /* CoinViewModelTests.swift */; };
+		E5D4736527BE8D1000C3DA0C /* MockDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4736427BE8D1000C3DA0C /* MockDatabaseManager.swift */; };
 		E5E990BD27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */; };
 		E5E990BF27AD587500691DE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E990BE27AD587500691DE9 /* ContentView.swift */; };
 		E5E990C127AD587700691DE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E990C027AD587700691DE9 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		E5B9767F27AECD5F00EEA4FB /* TopListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListRowView.swift; sourceTree = "<group>"; };
 		E5D4735A27BE8BEA00C3DA0C /* CryptocurrencyTrackerAppUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptocurrencyTrackerAppUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D4735C27BE8BEA00C3DA0C /* CoinViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModelTests.swift; sourceTree = "<group>"; };
+		E5D4736427BE8D1000C3DA0C /* MockDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabaseManager.swift; sourceTree = "<group>"; };
 		E5E990B927AD587500691DE9 /* CryptocurrencyTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptocurrencyTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptocurrencyTrackerAppApp.swift; sourceTree = "<group>"; };
 		E5E990BE27AD587500691DE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,9 +141,18 @@
 		E5D4735B27BE8BEA00C3DA0C /* CryptocurrencyTrackerAppUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				E5D4736327BE8CFB00C3DA0C /* MockDatabase */,
 				E5D4735C27BE8BEA00C3DA0C /* CoinViewModelTests.swift */,
 			);
 			path = CryptocurrencyTrackerAppUnitTests;
+			sourceTree = "<group>";
+		};
+		E5D4736327BE8CFB00C3DA0C /* MockDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4736427BE8D1000C3DA0C /* MockDatabaseManager.swift */,
+			);
+			path = MockDatabase;
 			sourceTree = "<group>";
 		};
 		E5E990B027AD587500691DE9 = {
@@ -294,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D4736527BE8D1000C3DA0C /* MockDatabaseManager.swift in Sources */,
 				E5D4735D27BE8BEA00C3DA0C /* CoinViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
