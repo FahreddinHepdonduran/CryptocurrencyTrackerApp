@@ -38,10 +38,14 @@ struct ContentView: View {
                 
                 Spacer(minLength: 65.0)
                 
-                List(viewModel.coins) { coins in
-                    BottomListRowView(model: coins)
-                        .cornerRadius(21.0)
-                        .listRowBackground(Color.clear)
+                ScrollView {
+                    VStack(spacing: 14.0) {
+                        ForEach(viewModel.coins) { coin in
+                            BottomListRowView(model: coin)
+                                .cornerRadius(21.0)
+                                .padding([.leading, .trailing], 20.0)
+                        }
+                    }
                 }
             }
         }
