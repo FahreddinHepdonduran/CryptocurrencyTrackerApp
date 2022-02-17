@@ -23,7 +23,7 @@ class CoinViewModel: ObservableObject {
     }
     
     func subscribeToCoins() {
-        database.dataPublisher.map({print($0); return $0})
+        database.dataPublisher.map({return $0})
             .assign(to: \.coins, on: self)
             .store(in: &cancellables)
     }
