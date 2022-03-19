@@ -10,10 +10,16 @@ import Kingfisher
 
 struct TopListRowView: View {
     let model: CoinAssetModel
+    let index: Int
     
     var body: some View {
         ZStack {
-            Color("TopListRowBackgroundColor")
+            LinearGradient(colors: index % 2 == 0 ? [Color("EvenNumberIndexColor1"),
+                                                    Color("EvenNumberIndexColor2")
+                                                    ] : [Color("OddNumberIndexColor1"),
+                                                         Color("OddNumberIndexColor2")],
+                           startPoint: .top,
+                           endPoint: .bottom)
             
             VStack {
                 Spacer(minLength: 24.0)
@@ -49,7 +55,7 @@ struct TopListRowView_Previews: PreviewProvider {
                 name: "Bitcoin",
                 iconUrl: "",
                 price: ""
-            )
+            ), index: 0
         )
             .previewLayout(
                 .fixed(width: 315.0, height: 210.0)
