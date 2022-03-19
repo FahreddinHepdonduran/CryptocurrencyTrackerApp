@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TopListRowView: View {
     let model: CoinAssetModel
@@ -17,9 +18,9 @@ struct TopListRowView: View {
             VStack {
                 Spacer(minLength: 24.0)
                 
-                Image(systemName: "person.crop.circle")
+                KFImage(URL(string: model.iconUrl)!)
                     .resizable()
-                    .frame(width: 66.0, height: 66.0)
+                    .frame(width: 56.0, height: 56.0)
                 
                 Spacer(minLength: 14.0)
                 

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct BottomListRowView: View {
     let model: CoinAssetModel
@@ -15,7 +16,7 @@ struct BottomListRowView: View {
             Color("BottomListRowBackgroundColor")
             
             HStack {
-                Image(systemName: "person.crop.circle")
+                KFImage(URL(string: model.iconUrl)!)
                     .resizable()
                     .frame(width: 46.0, height: 46.0)
                     .padding(.leading, 16.0)
