@@ -15,4 +15,12 @@ struct CoinAssetModel: Identifiable, Codable {
     let name: String
     let iconUrl: String
     let price: String
+    
+    var roundedPrice: String {
+        guard let doublePrice = Double(price) else {
+            return price
+        }
+        
+        return String(format: "%.3f", doublePrice)
+    }
 }

@@ -29,7 +29,7 @@ struct BottomListRowView: View {
                 
                 Spacer(minLength: 71.0)
                 
-                Text(model.price)
+                Text("\(model.roundedPrice) $")
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                     .padding(.trailing, 43.0)
