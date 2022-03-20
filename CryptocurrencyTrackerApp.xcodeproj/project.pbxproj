@@ -11,6 +11,7 @@
 		E53367EE27E6567B006609EA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E53367ED27E6567B006609EA /* Kingfisher */; };
 		E56CDF6C27E1078900C7C4B2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E56CDF6B27E1078900C7C4B2 /* FirebaseFirestore */; };
 		E56CDF6E27E1078900C7C4B2 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = E56CDF6D27E1078900C7C4B2 /* FirebaseFirestoreSwift-Beta */; };
+		E572F31D27E738910010C73B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572F31C27E738910010C73B /* SplashView.swift */; };
 		E58E0FFC27BC211700B3FC91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */; };
 		E58E100427BC308B00B3FC91 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100327BC308B00B3FC91 /* DatabaseProtocol.swift */; };
 		E58E100727BC337100B3FC91 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100627BC337100B3FC91 /* FirebaseManager.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		E504703227AFEA5C0058A560 /* BottomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomListRowView.swift; sourceTree = "<group>"; };
+		E572F31C27E738910010C73B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E58E100327BC308B00B3FC91 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		E58E100627BC337100B3FC91 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			path = BottomListRowView;
 			sourceTree = "<group>";
 		};
+		E572F31B27E738790010C73B /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				E572F31C27E738910010C73B /* SplashView.swift */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
 		E58E100227BC300F00B3FC91 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 		E5B9767C27AECBEE00EEA4FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E572F31B27E738790010C73B /* SplashView */,
 				E504703127AFEA0A0058A560 /* BottomListRowView */,
 				E5B9767D27AECC5B00EEA4FB /* MainView */,
 				E5B9767E27AECCE400EEA4FB /* TopListRowView */,
@@ -326,6 +337,7 @@
 				E5A9E1AE27B6AE33000872B6 /* CoinAssetModel.swift in Sources */,
 				E504703327AFEA5C0058A560 /* BottomListRowView.swift in Sources */,
 				E5E990BD27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift in Sources */,
+				E572F31D27E738910010C73B /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
