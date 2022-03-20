@@ -17,7 +17,8 @@ struct TopListRowView: View {
             LinearGradient(colors: index % 2 == 0 ? [Color("EvenNumberIndexColor1"),
                                                     Color("EvenNumberIndexColor2")
                                                     ] : [Color("OddNumberIndexColor1"),
-                                                         Color("OddNumberIndexColor2")],
+                                                         Color("OddNumberIndexColor2"),
+                                                         Color("OddNumberIndexColor3")],
                            startPoint: .top,
                            endPoint: .bottom)
             

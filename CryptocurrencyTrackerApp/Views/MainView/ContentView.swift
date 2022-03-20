@@ -18,8 +18,7 @@ struct ContentView: View {
                 colors:
                     [
                         Color("GradientBackgroundColor1"),
-                        Color("GradientBackgroundColor2"),
-                        Color("GradientBackgroundColor3")
+                        Color("GradientBackgroundColor2")
                     ],
                 startPoint: .top,
                 endPoint: .bottom
