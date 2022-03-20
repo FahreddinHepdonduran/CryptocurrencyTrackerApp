@@ -33,6 +33,8 @@ struct BottomListRowView: View {
                     .font(.custom("Roboto", size: 16.0))
                     .foregroundColor(.white)
                     .padding(.trailing, 43.0)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.5)
             }.frame(width: 317.0, height: 77.0)
         }
     }
