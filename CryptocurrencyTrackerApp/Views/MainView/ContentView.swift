@@ -34,7 +34,8 @@ struct ContentView: View {
                     Spacer(minLength: 71.0)
                     
                     ScrollView(.horizontal) {
-                        HStack(spacing: 14.0) {
+                        HStack(spacing: 18.0) {
+                            Spacer(minLength: 36.0)
                             ForEach(Array(viewModel.coins.enumerated()), id: \.element.id) { index, coin in
                                 TopListRowView(model: coin, index: index)
                                     .cornerRadius(21.0)
@@ -60,7 +61,7 @@ struct ContentView: View {
     
     func splashDelay() {
         DispatchQueue.main.asyncAfter(deadline: .now()+2) {
-            flag = false
+            flag.toggle()
         }
     }
 }
