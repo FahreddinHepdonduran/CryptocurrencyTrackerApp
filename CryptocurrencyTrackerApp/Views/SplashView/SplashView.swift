@@ -9,9 +9,15 @@ import SwiftUI
 
 struct SplashView: View {
     var body: some View {
-        Image("SplashIcon")
-            .resizable()
-            .frame(width: 192.0, height: 218.0)
+        ZStack {
+            Color
+                .white
+                .edgesIgnoringSafeArea(.all)
+            
+            Image("SplashIcon")
+                .resizable()
+                .frame(width: 192.0, height: 218.0)
+        }
     }
 }
 
