@@ -11,40 +11,50 @@ import Combine
 struct ContentView: View {
     
     @ObservedObject var viewModel = CoinViewModel()
+    @State var flag: Bool = true
     
     var body: some View {
-        ZStack {
-            LinearGradient(
-                colors:
-                    [
-                        Color("GradientBackgroundColor1"),
-                        Color("GradientBackgroundColor2"),
-                        Color("GradientBackgroundColor3")
-                    ],
-                startPoint: .top,
-                endPoint: .bottom
-            ).edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Spacer(minLength: 71.0)
-                
-                ScrollView(.horizontal) {
-                    HStack(spacing: 14.0) {
-                        ForEach(Array(viewModel.coins.enumerated()), id: \.element.id) { index, coin in
-                            TopListRowView(model: coin, index: index)
-                                .cornerRadius(21.0)
-                        }
+        if flag {
+            SplashView()
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now()+2) {
+                        flag = false
                     }
-                }.frame(height: 210.0)
+                }
+        } else {
+            ZStack {
+                LinearGradient(
+                    colors:
+                        [
+                            Color("GradientBackgroundColor1"),
+                            Color("GradientBackgroundColor2"),
+                            Color("GradientBackgroundColor3")
+                        ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                ).edgesIgnoringSafeArea(.all)
                 
-                Spacer(minLength: 65.0)
-                
-                ScrollView {
-                    VStack(spacing: 14.0) {
-                        ForEach(viewModel.coins) { coin in
-                            BottomListRowView(model: coin)
-                                .cornerRadius(21.0)
-                                .padding([.leading, .trailing], 20.0)
+                VStack {
+                    Spacer(minLength: 71.0)
+                    
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 14.0) {
+                            ForEach(Array(viewModel.coins.enumerated()), id: \.element.id) { index, coin in
+                                TopListRowView(model: coin, index: index)
+                                    .cornerRadius(21.0)
+                            }
+                        }
+                    }.frame(height: 210.0)
+                    
+                    Spacer(minLength: 65.0)
+                    
+                    ScrollView {
+                        VStack(spacing: 14.0) {
+                            ForEach(viewModel.coins) { coin in
+                                BottomListRowView(model: coin)
+                                    .cornerRadius(21.0)
+                                    .padding([.leading, .trailing], 20.0)
+                            }
                         }
                     }
                 }
