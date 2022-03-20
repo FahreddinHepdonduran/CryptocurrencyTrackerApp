@@ -16,11 +16,7 @@ struct ContentView: View {
     var body: some View {
         if flag {
             SplashView()
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now()+2) {
-                        flag = false
-                    }
-                }
+                .onAppear(perform: splashDelay)
         } else {
             ZStack {
                 LinearGradient(
@@ -59,6 +55,12 @@ struct ContentView: View {
                     }
                 }
             }
+        }
+    }
+    
+    func splashDelay() {
+        DispatchQueue.main.asyncAfter(deadline: .now()+2) {
+            flag = false
         }
     }
 }
