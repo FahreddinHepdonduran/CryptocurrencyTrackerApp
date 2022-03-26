@@ -28,7 +28,9 @@ struct ContentView: View {
                 Spacer(minLength: 71.0)
                 
                 ScrollView(.horizontal) {
-                    HStack(spacing: 14.0) {
+                    HStack(spacing: 6.0) {
+                        Spacer(minLength: 20.0)
+                        
                         ForEach(Array(viewModel.coins.enumerated()), id: \.element.id) { index, coin in
                             TopListRowView(model: coin, index: index)
                                 .cornerRadius(21.0)
