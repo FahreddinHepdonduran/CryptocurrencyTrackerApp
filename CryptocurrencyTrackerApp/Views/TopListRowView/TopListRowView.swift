@@ -33,13 +33,16 @@ struct TopListRowView: View {
                 
                 Text(model.name)
                     .font(.custom("Roboto", size: 16.0))
-                    .foregroundColor(.white)
+                    .fontWeight(.regular)
+                    .tracking(0.15)
+                    .foregroundColor(.black)
                 
                 Spacer(minLength: 23.0)
                 
                 Text(model.price)
-                    .font(.custom("Roboto", size: 16.0))
-                    .foregroundColor(.white)
+                    .font(.custom("Roboto", size: 24.0))
+                    .fontWeight(.regular)
+                    .foregroundColor(.black)
                 
                 Spacer(minLength: 45.0)
             }.frame(width: 315.0, height: 210.0)
