@@ -25,7 +25,7 @@ struct TopListRowView: View {
             VStack {
                 Spacer(minLength: 24.0)
                 
-                KFImage(URL(string: model.iconUrl)!)
+                KFImage(model.iconUrlStringToUrl)
                     .resizable()
                     .frame(width: 56.0, height: 56.0)
                 
