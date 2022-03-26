@@ -26,4 +26,8 @@ struct CoinAssetModel: Identifiable, Codable {
         return String(format: "%.3f", doublePrice)
     }
     
+    var iconUrlStringToUrl: URL? {
+        return URL(string: self.iconUrl)
+    }
+    
 }
