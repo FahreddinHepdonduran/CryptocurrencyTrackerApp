@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E504703327AFEA5C0058A560 /* BottomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504703227AFEA5C0058A560 /* BottomListRowView.swift */; };
-		E53367EE27E6567B006609EA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E53367ED27E6567B006609EA /* Kingfisher */; };
-		E56CDF6C27E1078900C7C4B2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E56CDF6B27E1078900C7C4B2 /* FirebaseFirestore */; };
-		E56CDF6E27E1078900C7C4B2 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = E56CDF6D27E1078900C7C4B2 /* FirebaseFirestoreSwift-Beta */; };
 		E58E0FFC27BC211700B3FC91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */; };
 		E58E100427BC308B00B3FC91 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100327BC308B00B3FC91 /* DatabaseProtocol.swift */; };
 		E58E100727BC337100B3FC91 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100627BC337100B3FC91 /* FirebaseManager.swift */; };
@@ -65,9 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E53367EE27E6567B006609EA /* Kingfisher in Frameworks */,
-				E56CDF6C27E1078900C7C4B2 /* FirebaseFirestore in Frameworks */,
-				E56CDF6E27E1078900C7C4B2 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,9 +228,6 @@
 			);
 			name = CryptocurrencyTrackerApp;
 			packageProductDependencies = (
-				E56CDF6B27E1078900C7C4B2 /* FirebaseFirestore */,
-				E56CDF6D27E1078900C7C4B2 /* FirebaseFirestoreSwift-Beta */,
-				E53367ED27E6567B006609EA /* Kingfisher */,
 			);
 			productName = CryptocurrencyTrackerApp;
 			productReference = E5E990B927AD587500691DE9 /* CryptocurrencyTrackerApp.app */;
@@ -271,8 +262,6 @@
 			);
 			mainGroup = E5E990B027AD587500691DE9;
 			packageReferences = (
-				E56CDF6A27E1078900C7C4B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				E53367EC27E6567B006609EA /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = E5E990BA27AD587500691DE9 /* Products */;
 			projectDirPath = "";
@@ -595,43 +584,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E53367EC27E6567B006609EA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
-		E56CDF6A27E1078900C7C4B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E53367ED27E6567B006609EA /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E53367EC27E6567B006609EA /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		E56CDF6B27E1078900C7C4B2 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E56CDF6A27E1078900C7C4B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		E56CDF6D27E1078900C7C4B2 /* FirebaseFirestoreSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E56CDF6A27E1078900C7C4B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5E990B127AD587500691DE9 /* Project object */;
 }
