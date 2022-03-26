@@ -37,9 +37,9 @@ struct TopListRowView: View {
                     .tracking(0.15)
                     .foregroundColor(.black)
                 
-                Spacer(minLength: 23.0)
+                Spacer(minLength: 12.0)
                 
-                Text(model.price)
+                Text("\(model.roundedPrice) $")
                     .font(.custom("Roboto", size: 24.0))
                     .fontWeight(.regular)
                     .foregroundColor(.black)
