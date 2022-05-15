@@ -12,21 +12,22 @@ struct BottomListRowView: View {
     let model: CoinAssetModel
     
     var body: some View {
-        HStack {
+        HStack(spacing: 80) {
             KFImage(model.iconUrlStringToUrl)
                 .resizable()
                 .frame(width: 46.0, height: 46.0)
                 .padding(.leading, 16.0)
             
-            Spacer(minLength: 22.0)
             
             Text(model.symbol)
                 .font(.custom("Roboto", size: 16.0))
                 .fontWeight(.regular)
                 .tracking(0.15)
                 .foregroundColor(.white)
+                .minimumScaleFactor(0.5)
+                .lineLimit(1)
+                .multilineTextAlignment(.leading)
             
-            Spacer(minLength: 71.0)
             
             Text("\(model.roundedPrice) $")
                 .font(.custom("Roboto", size: 16.0))
