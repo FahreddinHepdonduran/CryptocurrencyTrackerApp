@@ -10,6 +10,7 @@
 		939BD74B2196206F725F1152 /* Pods_CryptocurrencyTrackerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8337AF529FB32C3769FA57F6 /* Pods_CryptocurrencyTrackerApp.framework */; };
 		C5BA129C828E03BECCB71928 /* Pods_CryptocurrencyTrackerAppUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B984932B61EDD4B9A6ADEEF /* Pods_CryptocurrencyTrackerAppUnitTests.framework */; };
 		E504703327AFEA5C0058A560 /* BottomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504703227AFEA5C0058A560 /* BottomListRowView.swift */; };
+		E539A4E5283AA7EE00DE0525 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E539A4E4283AA7EE00DE0525 /* Sequence+Extensions.swift */; };
 		E58E0FFC27BC211700B3FC91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */; };
 		E58E100427BC308B00B3FC91 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100327BC308B00B3FC91 /* DatabaseProtocol.swift */; };
 		E58E100727BC337100B3FC91 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100627BC337100B3FC91 /* FirebaseManager.swift */; };
@@ -42,6 +43,7 @@
 		BC364DFCB508537740CC4F6F /* Pods-CryptocurrencyTrackerAppUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTrackerAppUnitTests.release.xcconfig"; path = "Target Support Files/Pods-CryptocurrencyTrackerAppUnitTests/Pods-CryptocurrencyTrackerAppUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		C358BD4DD52BDE7C1A1718D0 /* Pods-CryptocurrencyTrackerAppUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTrackerAppUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-CryptocurrencyTrackerAppUnitTests/Pods-CryptocurrencyTrackerAppUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E504703227AFEA5C0058A560 /* BottomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomListRowView.swift; sourceTree = "<group>"; };
+		E539A4E4283AA7EE00DE0525 /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
 		E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E58E100327BC308B00B3FC91 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		E58E100627BC337100B3FC91 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -95,7 +97,6 @@
 				C358BD4DD52BDE7C1A1718D0 /* Pods-CryptocurrencyTrackerAppUnitTests.debug.xcconfig */,
 				BC364DFCB508537740CC4F6F /* Pods-CryptocurrencyTrackerAppUnitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,6 +106,14 @@
 				E504703227AFEA5C0058A560 /* BottomListRowView.swift */,
 			);
 			path = BottomListRowView;
+			sourceTree = "<group>";
+		};
+		E539A4E3283AA7D400DE0525 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E539A4E4283AA7EE00DE0525 /* Sequence+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E58E100227BC300F00B3FC91 /* Protocols */ = {
@@ -208,6 +217,7 @@
 				E5E990C027AD587700691DE9 /* Assets.xcassets */,
 				E5E990BC27AD587500691DE9 /* CryptocurrencyTrackerAppApp.swift */,
 				E58E100527BC334900B3FC91 /* DatabaseManager */,
+				E539A4E3283AA7D400DE0525 /* Extensions */,
 				E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */,
 				E5A9E1AA27B6ADB8000872B6 /* Models */,
 				E5E990C227AD587700691DE9 /* Preview Content */,
@@ -403,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E539A4E5283AA7EE00DE0525 /* Sequence+Extensions.swift in Sources */,
 				E5E990BF27AD587500691DE9 /* ContentView.swift in Sources */,
 				E5B9768027AECD5F00EEA4FB /* TopListRowView.swift in Sources */,
 				E58E100727BC337100B3FC91 /* FirebaseManager.swift in Sources */,
