@@ -11,6 +11,7 @@
 		C5BA129C828E03BECCB71928 /* Pods_CryptocurrencyTrackerAppUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B984932B61EDD4B9A6ADEEF /* Pods_CryptocurrencyTrackerAppUnitTests.framework */; };
 		E504703327AFEA5C0058A560 /* BottomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504703227AFEA5C0058A560 /* BottomListRowView.swift */; };
 		E539A4E5283AA7EE00DE0525 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E539A4E4283AA7EE00DE0525 /* Sequence+Extensions.swift */; };
+		E539A4E9283AA90100DE0525 /* ContentView+CoinOrderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E539A4E8283AA90100DE0525 /* ContentView+CoinOrderExtensions.swift */; };
 		E58E0FFC27BC211700B3FC91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */; };
 		E58E100427BC308B00B3FC91 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100327BC308B00B3FC91 /* DatabaseProtocol.swift */; };
 		E58E100727BC337100B3FC91 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E100627BC337100B3FC91 /* FirebaseManager.swift */; };
@@ -44,6 +45,7 @@
 		C358BD4DD52BDE7C1A1718D0 /* Pods-CryptocurrencyTrackerAppUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptocurrencyTrackerAppUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-CryptocurrencyTrackerAppUnitTests/Pods-CryptocurrencyTrackerAppUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E504703227AFEA5C0058A560 /* BottomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomListRowView.swift; sourceTree = "<group>"; };
 		E539A4E4283AA7EE00DE0525 /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
+		E539A4E8283AA90100DE0525 /* ContentView+CoinOrderExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+CoinOrderExtensions.swift"; sourceTree = "<group>"; };
 		E58E0FFB27BC211700B3FC91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E58E100327BC308B00B3FC91 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		E58E100627BC337100B3FC91 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E539A4E7283AA8C900DE0525 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E539A4E8283AA90100DE0525 /* ContentView+CoinOrderExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E58E100227BC300F00B3FC91 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +171,7 @@
 		E5B9767D27AECC5B00EEA4FB /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				E539A4E7283AA8C900DE0525 /* Extensions */,
 				E5E990BE27AD587500691DE9 /* ContentView.swift */,
 			);
 			path = MainView;
@@ -417,6 +428,7 @@
 				E5E990BF27AD587500691DE9 /* ContentView.swift in Sources */,
 				E5B9768027AECD5F00EEA4FB /* TopListRowView.swift in Sources */,
 				E58E100727BC337100B3FC91 /* FirebaseManager.swift in Sources */,
+				E539A4E9283AA90100DE0525 /* ContentView+CoinOrderExtensions.swift in Sources */,
 				E58E100A27BC385B00B3FC91 /* CoinViewModel.swift in Sources */,
 				E58E100427BC308B00B3FC91 /* DatabaseProtocol.swift in Sources */,
 				E5A9E1AE27B6AE33000872B6 /* CoinAssetModel.swift in Sources */,

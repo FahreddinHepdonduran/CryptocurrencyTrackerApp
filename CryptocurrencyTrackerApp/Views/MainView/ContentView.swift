@@ -31,7 +31,7 @@ struct ContentView: View {
                     HStack(spacing: 6.0) {
                         Spacer(minLength: 20.0)
                         
-                        ForEach(Array(viewModel.coins.enumerated()), id: \.element.id) { index, coin in
+                        ForEach(Array(top10Coins().enumerated()), id: \.element.id) { index, coin in
                             TopListRowView(model: coin, index: index)
                                 .cornerRadius(21.0)
                         }
@@ -52,6 +52,7 @@ struct ContentView: View {
             }
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
