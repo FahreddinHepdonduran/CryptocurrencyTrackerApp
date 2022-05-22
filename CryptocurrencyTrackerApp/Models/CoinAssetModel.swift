@@ -30,4 +30,13 @@ struct CoinAssetModel: Identifiable, Codable {
         return URL(string: self.iconUrl)
     }
     
+    var doublePrice: Double {
+        guard let doublePrice = Double(self.price)
+        else {
+            return 0
+        }
+        
+        return doublePrice
+    }
+    
 }
