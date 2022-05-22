@@ -27,7 +27,7 @@ struct ContentView: View {
             VStack {
                 Spacer(minLength: 71.0)
                 
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 6.0) {
                         Spacer(minLength: 20.0)
                         
@@ -40,7 +40,7 @@ struct ContentView: View {
                 
                 Spacer(minLength: 65.0)
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     VStack(spacing: 14.0) {
                         ForEach(viewModel.coins) { coin in
                             BottomListRowView(model: coin)
