@@ -9,16 +9,23 @@ import SwiftUI
 import Kingfisher
 
 struct BottomListRowView: View {
+    
     let model: CoinAssetModel
     
     var body: some View {
         HStack(spacing: 80) {
-            KFImage(model.iconUrlStringToUrl)
-                .resizable()
-                .frame(width: 46.0, height: 46.0)
-                .padding(.leading, 16.0)
+            if model.iconUrl.suffix(3) == "png" {
+                KFImage(model.iconUrlStringToUrl)
+                    .resizable()
+                    .frame(width: 46.0, height: 46.0)
+                    .padding(.leading, 16.0)
+            } else {
+                Image("general-crypto-icon")
+                    .frame(width: 46.0, height: 46.0)
+                    .padding(.leading, 16.0)
+            }
             
-            
+    
             Text(model.symbol)
                 .font(.custom("Roboto", size: 16.0))
                 .fontWeight(.regular)
@@ -28,7 +35,7 @@ struct BottomListRowView: View {
                 .lineLimit(1)
                 .multilineTextAlignment(.leading)
             
-            
+    
             Text("\(model.roundedPrice) $")
                 .font(.custom("Roboto", size: 16.0))
                 .fontWeight(.semibold)
@@ -37,11 +44,14 @@ struct BottomListRowView: View {
                 .minimumScaleFactor(0.5)
                 .lineLimit(1)
                 .multilineTextAlignment(.trailing)
-        }.frame(width: 317.0, height: 77.0)
+        }
+        .frame(width: 317.0, height: 77.0)
     }
+    
 }
 
 struct BottomListRowView_Previews: PreviewProvider {
+    
     static var previews: some View {
         BottomListRowView(
             model: CoinAssetModel(
@@ -55,4 +65,5 @@ struct BottomListRowView_Previews: PreviewProvider {
             .fixed(width: 317.0, height: 77.0)
         )
     }
+    
 }
