@@ -25,9 +25,14 @@ struct TopListRowView: View {
             VStack {
                 Spacer(minLength: 24.0)
                 
-                KFImage(model.iconUrlStringToUrl)
-                    .resizable()
-                    .frame(width: 56.0, height: 56.0)
+                if model.iconUrl.suffix(3) == "png" {
+                    KFImage(model.iconUrlStringToUrl)
+                        .resizable()
+                        .frame(width: 46.0, height: 46.0)
+                } else {
+                    Image("general-crypto-icon")
+                        .frame(width: 46.0, height: 46.0)
+                }
                 
                 Spacer(minLength: 14.0)
                 
